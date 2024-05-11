@@ -262,39 +262,4 @@ section {
 
 /* Footer Section */
 
-.desktop-child,
-.frame-parent1,
-.frame-parent2 {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-}
-.frame-parent1 {
-  flex: 1;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--gap-xl);
-}
-.desktop-child {
-  align-self: stretch;
-  align-items: center;
-  justify-content: center;
-  padding: 70.5px var(--padding-61xl);
-  box-sizing: border-box;
-  text-align: left;
-  font-size: var(--font-size-smi);
-  color: var(--royalty);
-  font-family: var(--font-gilroy-semibold);
-}
 
-footer {
-  display: flex;
-  width: 1280px;
-  height: 223px;
-  padding: 72px 80px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 64px;
-  flex-shrink: 0;
-}
