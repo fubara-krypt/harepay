@@ -1,0 +1,272 @@
+/* I don't know what I did here but I think you can look at it and give feedbacks */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+  background-color: #f4f4f4;
+  color: white;
+  margin-left: 80px;
+  margin-right: 80px;
+  width: 1440px;
+}
+
+header {
+  display: flex;
+  padding: 32px, 80px;
+  padding-bottom: 24px;
+  height: 96px;
+  width: 1440px;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  width: 1280px;
+  height: 96px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Fonts or Typography*/
+
+h1 {
+  color: var(--Gray-900, #101828);
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px; /* 120% */
+  letter-spacing: -1.2px;
+  align-self: stretch;
+}
+
+h2 {
+  color: var(--Gray-900, #101828);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -0.72px;
+}
+
+h3 {
+  width: 800px;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123.958%; /* 79.333px */
+  letter-spacing: -1.28px;
+}
+
+p {
+  color: var(--Gray-600, #475467);
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  align-self: stretch;
+}
+
+.supporting-text1 {
+  color: var(--Gray-500, #667085);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  align-self: stretch;
+  text-align: left;
+}
+
+/* Button Components */
+
+button {
+  padding-bottom: 12px;
+  display: flex;
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  border: 1px solid var(--Gray-25, #fcfcfd);
+  background: var(--Gray-900, #101828);
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.primary_button {
+  background-color: #ddd;
+  font-family: satoshi;
+  font-weight: 500;
+}
+
+.secondary_button {
+  background-color: #f4f4f4;
+  font-family: satoshi;
+  font-weight: 500;
+}
+
+/* Hero Section */
+
+.hero-container {
+  display: flex;
+  width: 1280px;
+  height: 640px;
+  flex-direction: column;
+  align-items: center;
+  gap: -401px;
+  flex-shrink: 0;
+}
+
+.iphone-mockup {
+  display: flex;
+  width: 512px;
+  padding: 40px 86.448px 0px 86px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section {
+  display: flex;
+  width: 1440px;
+  height: 930px;
+  padding: 56px 80px 96px 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.herobutton {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  fill: #0d9383;
+}
+
+.hero-innner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+/* Features Section */
+
+.features-section {
+  display: flex;
+  max-width: 1440px;
+  padding: 56px 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.features1 {
+  display: flex;
+  padding: 64px 0px;
+  gap: 72px;
+  align-items: center;
+  align-self: stretch;
+}
+
+.features-text-wrapper1 {
+  display: flex;
+  width: 604px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: white;
+}
+
+.mockup-features1 {
+  display: flex;
+  height: 420px;
+  width: 600px;
+  padding: 71.872px 129.83px 0px 130.618px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: #00665a;
+}
+
+.works {
+  color: var(--Gray-900, #101828);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -0.72px;
+}
+
+section {
+  display: flex;
+  width: 1440px;
+  padding: 56px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+/* CTA Section */
+
+.cta-heading {
+  color: #FFF;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+
+.cta-section-container {
+  color: #53389E;
+  display: flex;
+  padding: 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+footer {
+  display: flex;
+  width: 1280px;
+  height: 223px;
+  padding: 72px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  flex-shrink: 0;
+}
