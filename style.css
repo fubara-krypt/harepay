@@ -238,6 +238,7 @@ section {
 
 .cta-heading {
   color: #FFF;
+  background-color: transparent;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 48px;
@@ -247,8 +248,14 @@ section {
   letter-spacing: -0.96px;
 }
 
+.cta-section {
+  background-image: url("Container.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .cta-section-container {
-  color: #53389E;
+  background-color: transparent;
   display: flex;
   padding: 64px;
   flex-direction: column;
@@ -257,6 +264,7 @@ section {
   gap: 40px;
   flex: 1 0 0;
   align-self: stretch;
+  border-radius: 20px;
 }
 
 
