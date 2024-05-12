@@ -307,7 +307,7 @@ section {
 
 /* Reponsiveness */
 
-/* Add mobile-first styles here */
+Add mobile-first styles here
 
 .hero-container {
   display: flex;
@@ -355,4 +355,4 @@ section {
   .features1:nth-child(even) {
     flex-direction: row-reverse;
   }
-}
+} -->
