@@ -304,3 +304,55 @@ section {
   line-height: 24px; /* 171.429% */
   flex: 1 0 0;
 }
+
+/* Reponsiveness */
+
+/* Add mobile-first styles here */
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.iphone-mockup {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.features1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.features1:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 600px) {
+  /* Styles for screens wider than 600px */
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+
+  .iphone-mockup {
+    width: 50%;
+  }
+
+  .features1 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .features1:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
