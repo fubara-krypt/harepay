@@ -1,7 +1,7 @@
 /* I don't know what I did here but I think you can look at it and give feedbacks */
 
-@media screen and (max-width: 350px) {
-  
+@media screen and (max-width: 600px) {
+
   h1 {
       font-size:120px;
       color: #00665A;
@@ -23,7 +23,6 @@ body {
   color: white;
   margin-left: 80px;
   margin-right: 80px;
-  width: 100%;
   max-width: 1280px;
   display: inline-flex;
   flex-direction: column;
@@ -293,6 +292,7 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
+  padding-top: 20px;
 }
 
 .cta-section-container {
