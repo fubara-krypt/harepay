@@ -1,13 +1,5 @@
 /* I don't know what I did here but I think you can look at it and give feedbacks */
 
-@media screen and (max-width: 600px) {
-
-  h1 {
-      font-size:120px;
-      color: #00665A;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -99,7 +91,7 @@ h4 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  }
+}
 
 p {
   color: var(--Gray-600, #475467);
@@ -140,7 +132,7 @@ button {
 }
 
 .primary_button {
-  background-color: #00665A;
+  background-color: #00665a;
   font-family: satoshi;
   font-weight: 500;
 }
@@ -276,7 +268,7 @@ section {
 /* CTA Section */
 
 .cta-heading {
-  color: #FFF;
+  color: #fff;
   background-color: transparent;
   text-align: center;
   font-family: Tangosans;
@@ -339,3 +331,22 @@ section {
 
 /* Reponsiveness */
 
+@media screen and (max-width: 834px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
