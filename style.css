@@ -333,20 +333,155 @@ section {
 
 @media screen and (max-width: 834px) {
   h1 {
+    font-size: 48px;
+    line-height: 150%;
+  }
+
+  p {
+    font-size: 32spx;
+    line-height: 150%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+
+  .iphone-mockup {
+    width: 50%;
+  }
+
+  .features1 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+    line-height: 150%;
+  }
+
+  p {
+    font-size: 32spx;
+    line-height: 150%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+
+  .iphone-mockup {
+    width: 50%;
+  }
+
+  .features1 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
     font-size: 40px;
+    line-height: 150%;
   }
 
   p {
     font-size: 24px;
+    line-height: 150%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+
+  .iphone-mockup {
+    width: 50%;
+  }
+
+  .features1 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 375px) {
   h1 {
     font-size: 36px;
+    line-height: 150%;
   }
 
   p {
     font-size: 18px;
+    line-height: 150%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+
+  .iphone-mockup {
+    width: 50%;
+  }
+
+  .features1 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 36px;
+    line-height: 150%;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+
+  .iphone-mockup {
+    width: 50%;
+  }
+
+  .features1 {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .features-section {
+    align-items: center;
+    padding: 20px 24px;
   }
 }
