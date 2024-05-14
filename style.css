@@ -15,6 +15,7 @@ body {
   color: white;
   margin-left: 80px;
   margin-right: 80px;
+  width: 100vw;
   max-width: 1280px;
   display: inline-flex;
   flex-direction: column;
