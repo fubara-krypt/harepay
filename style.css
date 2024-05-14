@@ -149,6 +149,7 @@ button {
 .hero-container {
   display: flex;
   width: 100%;
+  max-width: 664px;
   height: 640px;
   flex-direction: column;
   align-items: center;
@@ -200,7 +201,8 @@ svg {
 
 .features-section {
   display: flex;
-  max-width: 1440px;
+  width: 100%;
+  max-width: 1280px;
   padding: 56px 80px;
   flex-direction: column;
   align-items: flex-start;
@@ -345,6 +347,7 @@ section {
   }
 
   .hero-container {
+     width: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -352,7 +355,7 @@ section {
   }
 
   .iphone-mockup {
-    width: 50%;
+    width: 100%;
   }
 
   .features1 {
@@ -382,7 +385,7 @@ section {
   }
 
   .iphone-mockup {
-    width: 50%;
+    width: 100%;
   }
 
   .features1 {
@@ -411,8 +414,12 @@ section {
     text-align: left;
   }
 
+  .herobutton {
+    flex-direction: column;
+  }
+
   .iphone-mockup {
-    width: 50%;
+    width: 100%;
   }
 
   .features1 {
@@ -441,8 +448,20 @@ section {
     text-align: left;
   }
 
+  .hero-innner-container {
+    display: flex;
+    padding: 0px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+  }
+  .herobutton {
+    flex-direction: column;
+  }
+
   .iphone-mockup {
-    width: 50%;
+    width: 100%;
   }
 
   .features1 {
@@ -465,14 +484,38 @@ section {
   }
 
   .hero-container {
+    width: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: left;
   }
 
+  .hero-section {
+    display: flex;
+    padding: 0px 24px;
+    height: 776px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+  }
+
+  .hero-innner-container {
+    display: flex;
+    padding: 0px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+  }
+
+  .herobutton {
+    flex-direction: column;
+  }
+
   .iphone-mockup {
-    width: 50%;
+    width: 100%;
   }
 
   .features1 {
@@ -485,5 +528,31 @@ section {
   .features-section {
     align-items: center;
     padding: 20px 24px;
+  }
+
+  .features-text-wrapper1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .features-text-wrapper2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
   }
 }
