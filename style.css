@@ -246,6 +246,7 @@ svg {
   align-items: center;
   border-radius: 32px;
   background: #00665a;
+  overflow: hidden;
 }
 
 .iphone-mockup2 {
