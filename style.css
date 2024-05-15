@@ -474,10 +474,27 @@ section {
   }
 
   .hero-container {
+    width: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: left;
+  }
+
+  .cta-heading {
+    font-size: 36px;
+  }
+  .footer-section {
+    padding: 24px;
+  }
+  .hero-section {
+    display: flex;
+    padding: 0px 24px;
+    height: 776px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
   }
 
   .hero-innner-container {
@@ -488,11 +505,8 @@ section {
     gap: 32px;
     align-self: stretch;
   }
-  .herobutton {
-    flex-direction: column;
-  }
 
-  .cta-button {
+  .herobutton {
     flex-direction: column;
   }
 
@@ -501,20 +515,68 @@ section {
   }
 
   .features1 {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 0;
     padding: 0px 24px;
   }
+  .features-text1 {
+    font-size: 32px;
+  }
+  
+  .features-section {
+    align-items: center;
+    padding: 20px 24px;
+  }
 
-    .cta-section-container {
+  .cta-button {
+    flex-direction: column;
+  }
+
+  .features-text-wrapper1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .features-text-wrapper2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .supporting-text1 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .cta-section-container {
     display: flex;
     padding: 40px 24px 48px 24px;
     flex-direction: column;
     align-items: center;
     gap: 32px;
-    align-self: stretch;
+    align-self: center;
     width: 295px;
+  }
+
+  section {
+    padding: 24px, 24px, 24px, 24px;
   }
 }
 
@@ -586,7 +648,7 @@ section {
   .features-text1 {
     font-size: 32px;
   }
-  
+
   .features-section {
     align-items: center;
     padding: 20px 24px;
