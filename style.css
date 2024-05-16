@@ -10,9 +10,11 @@
 @font-face {
   font-family: Tangosans;
   src: url(TangoSans.ttf);
+}
 
-  /* font-family: Satoshi;
-  src: url(Satoshi-Regular.otf); */
+@font-face {
+  font-family: Satoshi;
+  src: url(Satoshi-Regular.otf);
 }
 
 body {
