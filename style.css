@@ -1,11 +1,11 @@
 /* I don't know what I did here but I think you can look at it and give feedbacks */
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: white;
-}
+} 
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -48,6 +48,7 @@ nav {
   width: 100%;
   height: 96px;
   justify-content: space-between;
+  align-self: stretch;
   align-items: center;
   flex-shrink: 0;
 }
@@ -216,6 +217,7 @@ svg {
 .features1 {
   display: flex;
   padding: 64px 0px;
+  width: 100%;
   gap: 72px;
   align-items: center;
   align-self: center;
@@ -223,7 +225,8 @@ svg {
 
 .features-text-wrapper1 {
   display: flex;
-  width: 604px;
+  width: 100%;
+  max-width: 604px;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
@@ -232,7 +235,8 @@ svg {
 
 .features-text-wrapper2 {
   display: flex;
-  width: 604px;
+  width: 100%;
+  max-width: 604px;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
@@ -249,7 +253,7 @@ svg {
   align-items: center;
   border-radius: 32px;
   background: #00665a;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .iphone-mockup2 {
@@ -349,530 +353,111 @@ section {
 
 /* Reponsiveness */
 
-@media screen and (max-width: 834px) {
+/* The desktop-first pre-defined media queries: */
+/* 2xl */
+@media (max-width: 1536px) {
+}
+
+/* xl */
+@media (max-width: 1280px) {
+}
+
+/* lg */
+@media (max-width: 1024px) {
+}
+
+/* md */
+@media (max-width: 768px) {
+  .features1 {
+    flex-direction: column;
+  }
+
+  .features2 {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    flex-direction: column;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .features1 {
+    flex-direction: column;
+  }
+
+  .features2 {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    flex-direction: column;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
   body {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
   h1 {
+    line-height: 120%;
     font-size: 48px;
-    line-height: 150%;
-  }
-
-  p {
-    font-size: 32spx;
-    line-height: 150%;
-  }
-
-  .hero-container {
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: left;
-  }
-
-  .iphone-mockup {
-    width: 100%;
-  }
-
-  .features1 {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  h1 {
-    font-size: 36px;
-    line-height: 150%;
   }
 
   p {
     font-size: 18px;
-    line-height: 150%;
   }
 
-  .hero-container {
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: left;
-  }
-
-  .cta-heading {
-    font-size: 36px;
-  }
-  .footer-section {
-    padding: 24px;
-  }
   .hero-section {
-    display: flex;
-    padding: 0px 24px;
-    height: 776px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
-  }
-
-  .hero-innner-container {
-    display: flex;
-    padding: 0px 24px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
-  }
-
-  .herobutton {
-    flex-direction: column;
-  }
-
-  .iphone-mockup {
-    width: 100%;
+    height: 720px;
+    padding: 20px 40px 20px 40px;
+    gap: 56px;
   }
 
   .features1 {
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 0;
-    padding: 0px 24px;
-  }
-  .features-text1 {
-    font-size: 32px;
   }
 
-  .features-section {
-    align-items: center;
-    padding: 20px 24px;
+  .features2 {
+    flex-direction: column;
+  }
+  
+  .features1 {
+    text-align: center;
+  }
+
+  .features2 {
+    text-align: center;
+  }
+
+  .supporting-text1 {
+    text-align: center;
+  }
+
+  .herobutton{
+    flex-direction: column;
   }
 
   .cta-button {
     flex-direction: column;
   }
 
-  .features-text-wrapper1 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: white;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
+  .features-section{
+    padding: 20px 40px 20px 40px;
   }
-
-  .features-text-wrapper2 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: white;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .supporting-text1 {
-    text-align: center;
-    font-size: 18px;
+  .cta-section {
+    height: 520px;
+    padding: 20px 40px 20px 40px;
   }
 
   .cta-section-container {
-    display: flex;
-    padding: 40px 24px 48px 24px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: center;
-    width: 295px;
-  }
-
-  section {
-    padding: 24px, 24px, 24px, 24px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  body {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  h1 {
-    font-size: 36px;
-    line-height: 150%;
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 150%;
-  }
-
-  .hero-container {
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: left;
-  }
-
-  .cta-heading {
-    font-size: 36px;
+    padding: 32px;
   }
   .footer-section {
-    padding: 24px;
-  }
-  .hero-section {
-    display: flex;
-    padding: 0px 24px;
-    height: 776px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
-  }
-
-  .hero-innner-container {
-    display: flex;
-    padding: 0px 24px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
-  }
-
-  .herobutton {
-    flex-direction: column;
-  }
-
-  .iphone-mockup {
-    width: 100%;
-  }
-
-  .features1 {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 0;
-    padding: 0px 24px;
-  }
-  .features-text1 {
-    font-size: 32px;
-  }
-
-  .features-section {
-    align-items: center;
-    padding: 20px 24px;
-  }
-
-  .cta-button {
-    flex-direction: column;
-  }
-
-  .features-text-wrapper1 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: white;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .features-text-wrapper2 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: white;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .supporting-text1 {
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .cta-section-container {
-    display: flex;
-    padding: 40px 24px 48px 24px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: center;
-    width: 295px;
-  }
-
-  section {
-    padding: 24px, 24px, 24px, 24px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  body {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  h1 {
-    font-size: 36px;
-    line-height: 150%;
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 150%;
-  }
-
-  .hero-container {
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: left;
-  }
-
-  .cta-heading {
-    font-size: 36px;
-  }
-  .footer-section {
-    padding: 24px;
-  }
-  .hero-section {
-    display: flex;
-    padding: 0px 24px;
-    height: 776px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
-  }
-
-  .hero-innner-container {
-    display: flex;
-    padding: 0px 24px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
-  }
-
-  .herobutton {
-    flex-direction: column;
-  }
-
-  .iphone-mockup {
-    width: 100%;
-  }
-
-  .features1 {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 0;
-    padding: 0px 24px;
-  }
-  .features-text1 {
-    font-size: 32px;
-  }
-
-  .features-section {
-    align-items: center;
-    padding: 20px 24px;
-  }
-
-  .cta-button {
-    flex-direction: column;
-  }
-
-  .features-text-wrapper1 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: white;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .features-text-wrapper2 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: white;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .supporting-text1 {
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .cta-section-container {
-    display: flex;
-    padding: 40px 24px 48px 24px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: center;
-    width: 295px;
-  }
-
-  section {
-    padding: 24px, 24px, 24px, 24px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  body {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  h1 {
-    font-size: 36px;
-    line-height: 150%;
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 150%;
-  }
-
-  .hero-container {
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: left;
-  }
-
-  .cta-heading {
-    font-size: 36px;
-  }
-  .footer-section {
-    padding: 24px;
-  }
-  .hero-section {
-    display: flex;
-    padding: 0px 24px;
-    height: 776px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
-  }
-
-  .hero-innner-container {
-    display: flex;
-    padding: 0px 24px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
-  }
-
-  .herobutton {
-    flex-direction: column;
-  }
-
-  .iphone-mockup {
-    width: 100%;
-  }
-
-  .features1 {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 0;
-    padding: 0px 24px;
-  }
-  .features-text1 {
-    font-size: 32px;
-  }
-
-  .features-section {
-    align-items: center;
-    padding: 20px 24px;
-  }
-
-  .cta-button {
-    flex-direction: column;
-  }
-
-  .features-text-wrapper1 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: white;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .features-text-wrapper2 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: white;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .supporting-text1 {
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .cta-section-container {
-    display: flex;
-    padding: 40px 24px 48px 24px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    align-self: center;
-    width: 295px;
-  }
-
-  section {
-    padding: 24px, 24px, 24px, 24px;
+    padding: 20px 40px 20px 40px;
   }
 }
