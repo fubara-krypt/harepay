@@ -10,12 +10,13 @@
 @font-face {
   font-family:Tangosans ;
   src: url(TangoSans.ttf);
+
+  font-family: Satoshi ;
+  src: url(Satoshi-Regular.otf);
 };
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
-    sans-serif;
+  font-family: Satoshi;
   color: #f4f4f4;
   margin-left: 80px;
   margin-right: 80px;
@@ -63,7 +64,7 @@ nav {
 h1 {
   color: var(--Gray-900, #101828);
   text-align: center;
-  font-family: TangoSans;
+  font-family: Tangosans;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
