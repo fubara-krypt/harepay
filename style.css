@@ -1,19 +1,19 @@
 /* I don't know what I did here but I think you can look at it and give feedbacks */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: white;
-} 
+}
 
 @font-face {
-  font-family:Tangosans ;
+  font-family: Tangosans;
   src: url(TangoSans.ttf);
 
-  font-family: Satoshi ;
+  font-family: Satoshi;
   src: url(Satoshi-Regular.otf);
-};
+}
 
 body {
   font-family: Tangosans, Satoshi;
@@ -168,7 +168,8 @@ button {
 
 .iphone-mockup {
   display: flex;
-  width: 512px;
+  width: 100%;
+  max-width: 512px;
   padding: 40px 86.448px 0px 86px;
   justify-content: center;
   align-items: center;
@@ -431,7 +432,7 @@ section {
   .features2 {
     flex-direction: column;
   }
-  
+
   .features1 {
     text-align: center;
   }
@@ -441,14 +442,14 @@ section {
   }
 
   .mockup-features1 {
-        padding: 28px;
+    padding: 28px;
   }
 
   .supporting-text1 {
     text-align: center;
   }
 
-  .herobutton{
+  .herobutton {
     flex-direction: column;
   }
 
@@ -456,7 +457,77 @@ section {
     flex-direction: column;
   }
 
-  .features-section{
+  .features-section {
+    padding: 20px 40px 20px 40px;
+  }
+  .cta-section {
+    height: 520px;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .cta-section-container {
+    padding: 32px;
+  }
+  .footer-section {
+    padding: 20px 40px 20px 40px;
+  }
+}
+
+/* xs */
+@media (max-width: 375px) {
+  body {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  h1 {
+    line-height: 120%;
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .hero-section {
+    height: 720px;
+    padding: 20px 40px 20px 40px;
+    gap: 56px;
+  }
+
+  .features1 {
+    flex-direction: column;
+  }
+
+  .features2 {
+    flex-direction: column;
+  }
+
+  .features1 {
+    text-align: center;
+  }
+
+  .features2 {
+    text-align: center;
+  }
+
+  .mockup-features1 {
+    padding: 28px;
+  }
+
+  .supporting-text1 {
+    text-align: center;
+  }
+
+  .herobutton {
+    flex-direction: column;
+  }
+
+  .cta-button {
+    flex-direction: column;
+  }
+
+  .features-section {
     padding: 20px 40px 20px 40px;
   }
   .cta-section {
