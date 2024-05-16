@@ -10,12 +10,13 @@
 @font-face {
   font-family:Tangosans ;
   src: url(TangoSans.ttf);
+
+  font-family: Satoshi ;
+  src: url(Satoshi-Regular.otf);
 };
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
-    sans-serif;
+  font-family: Tangosans;
   color: #f4f4f4;
   margin-left: 80px;
   margin-right: 80px;
