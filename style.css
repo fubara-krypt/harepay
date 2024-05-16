@@ -20,7 +20,7 @@ body {
   color: #f4f4f4;
   margin-left: 80px;
   margin-right: 80px;
-  width: 100vw;
+  width: 100%;
   max-width: 1280px;
   display: inline-flex;
   flex-direction: column;
@@ -415,6 +415,10 @@ section {
     font-size: 48px;
   }
 
+  h2 {
+    align-self: center;
+  }
+
   p {
     font-size: 18px;
   }
@@ -483,6 +487,10 @@ section {
   h1 {
     line-height: 120%;
     font-size: 48px;
+  }
+
+  h2 {
+    align-self: center;
   }
 
   p {
